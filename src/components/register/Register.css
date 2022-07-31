@@ -42,7 +42,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   height: auto;
   background: #ffffff;
   box-shadow: 0px 18px 40px -12px rgb(92 97 141 / 25%);
@@ -69,9 +69,8 @@
   margin: 10px auto;
 }
 .form .agreement {
-  width: 77%;
   color: #00bea4;
-  margin: 0 auto;
+  padding: 0 40px;
 }
 .form .button {
   width: 82%;
@@ -93,4 +92,19 @@
   color: #00bea4;
   text-decoration: none;
   margin-left: 5px;
+}
+@media (max-width: 1200px) {
+  .form {
+    width: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    width: 80% !important;
+  }
+}
+@media (max-width: 560px) {
+  .form {
+    width: 90% !important;
+  }
 }
