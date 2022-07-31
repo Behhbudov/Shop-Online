@@ -42,7 +42,7 @@ function Product(props) {
       <div className="product">
         <div className="product--container">
           <h1>{props.currentCategory}</h1>
-          <div className="form">
+          <div className="filter">
             <h2>{filteredProducts.length} Məhsul</h2>
             <form>
               <div>

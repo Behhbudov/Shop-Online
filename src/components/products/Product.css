@@ -51,7 +51,7 @@
   font-weight: 500;
   margin: 40px 0 0 0;
 }
-.product--container .form {
+.product--container .filter {
   display: flex;
   justify-content: space-between;
 }
@@ -60,10 +60,10 @@
   font-weight: 400;
   margin: 10px 0 50px 0;
 }
-.product--container .form form {
+.product--container .filter form {
   display: flex;
 }
-.product--container .form input {
+.product--container .filter input {
   width: 100px;
   height: 35px;
   font-size: 17px;
@@ -72,17 +72,17 @@
   border-radius: 4px;
   padding: 0 5px;
 }
-.product--container .form input:nth-of-type(1) {
+.product--container .filter input:nth-of-type(1) {
   margin-left: 5px;
 }
-.product--container .form input:nth-of-type(2) {
+.product--container .filter input:nth-of-type(2) {
   margin: 0 25px 0 4px;
 }
-.product--container .form label {
+.product--container .filter label {
   font-weight: 500;
   font-size: 18px;
 }
-.product--container .form select {
+.product--container .filter select {
   width: 200px;
   height: 35px;
   font-size: 16px;
@@ -91,7 +91,7 @@
   border: 2px solid #e7e6ef;
   border-radius: 5px;
 }
-.product--container .form .button {
+.product--container .filter .button {
   height: 35px;
   font-size: 18px;
   background-color: #00bea4;
@@ -179,7 +179,7 @@
   }
 }
 @media (max-width: 1000px) {
-  .product--container .form {
+  .product--container .filter {
     flex-direction: column-reverse;
   }
   .product--container h2 {
@@ -187,13 +187,13 @@
   }
 }
 @media (max-width: 900px) {
-  .product--container .form form {
+  .product--container .filter form {
     flex-direction: column;
   }
-  .product--container .form form div:nth-child(2) {
+  .product--container .filter form div:nth-child(2) {
     margin-top: 10px;
   }
-  .product--container .form .button {
+  .product--container .filter .button {
     width: 80px;
     margin: 10px 0 0 0;
   }
@@ -202,19 +202,22 @@
   .products div div button {
     display: block;
   }
+  .products > div:hover {
+    transform: inherit;
+  }
 }
 @media (max-width: 700px) {
   .product--container {
     align-items: center;
     width: 90%;
   }
-  .product--container .form {
+  .product--container .filter {
     align-items: center;
   }
-  .product--container .form form {
+  .product--container .filter form {
     align-items: center;
   }
-  .product--container .form input:nth-of-type(2) {
+  .product--container .filter input:nth-of-type(2) {
     margin: 0 0 0 4px;
   }
   .products > div {
