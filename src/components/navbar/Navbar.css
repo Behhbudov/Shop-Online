@@ -1,0 +1,106 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  padding: 1rem 1.5rem;
+}
+.nav--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.nav--container img {
+  cursor: pointer;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 768px;
+  padding: 0;
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li span {
+  font: 400 1em;
+  color: #000;
+  cursor: pointer;
+}
+.nav .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav .cart {
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #ffb874;
+}
+.nav .user {
+  color: #00bea4;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+.nav .user .sign {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 8px 24px #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+.nav .user .sign span {
+  font-size: 16px;
+  padding: 10px 7px;
+  color: #000;
+}
+.nav .user .sign span:hover {
+  color: #999;
+}
+.nav .user .sign .line {
+  width: 0;
+  height: 3px;
+  transition: 0.3s ease;
+}
+.nav .user .sign span:hover .line {
+  width: 100%;
+  background-color: #41d050;
+}
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  .nav ul li {
+    padding: 10px 0;
+  }
+  .nav .user .sign {
+    width: 150px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .burgerMenu {
+    display: block;
+    font-size: 30px;
+  }
+  .nav--container .hidden {
+    display: none;
+  }
+}

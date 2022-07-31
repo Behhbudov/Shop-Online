@@ -1,0 +1,227 @@
+.product--info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f3f9ff;
+  padding: 0.7rem 0 2.5rem 0;
+}
+.product--info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+.product--info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.product--info > div div {
+  display: flex;
+  align-items: center;
+}
+.product--info > div div p:hover {
+  color: #007bff;
+  transition: 0.3s ease;
+}
+.product--info > div div span:nth-of-type(1) {
+  margin: 0 7px;
+}
+.product--info > div div span:last-child {
+  color: #00bea4;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.product--container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.product--container h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 40px 0 0 0;
+}
+.product--container .form {
+  display: flex;
+  justify-content: space-between;
+}
+.product--container h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0 50px 0;
+}
+.product--container .form form {
+  display: flex;
+}
+.product--container .form input {
+  width: 100px;
+  height: 35px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 2px solid #e7e6ef;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+.product--container .form input:nth-of-type(1) {
+  margin-left: 5px;
+}
+.product--container .form input:nth-of-type(2) {
+  margin: 0 25px 0 4px;
+}
+.product--container .form label {
+  font-weight: 500;
+  font-size: 18px;
+}
+.product--container .form select {
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  padding: 4px 8px;
+  margin-left: 5px;
+  border: 2px solid #e7e6ef;
+  border-radius: 5px;
+}
+.product--container .form .button {
+  height: 35px;
+  font-size: 18px;
+  background-color: #00bea4;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 30px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.products > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+  height: 470px;
+  background-color: #faeaea;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.products > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 24px #ccc;
+}
+.products img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.products h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.products span {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.products div div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.products div div button {
+  display: none;
+  font-size: 14px;
+  background-color: #00bea4;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0 17px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.products div div button:hover {
+  box-shadow: 0px 8px 24px #00bea4;
+}
+.products > div:hover button {
+  display: block;
+}
+@media (max-width: 1300px) {
+  .products > div {
+    width: 28%;
+  }
+  .products img {
+    height: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .products > div {
+    width: 40%;
+    height: 100%;
+  }
+  .products img {
+    height: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .product--container .form {
+    flex-direction: column-reverse;
+  }
+  .product--container h2 {
+    margin: 10px 0 25px 0;
+  }
+}
+@media (max-width: 900px) {
+  .product--container .form form {
+    flex-direction: column;
+  }
+  .product--container .form form div:nth-child(2) {
+    margin-top: 10px;
+  }
+  .product--container .form .button {
+    width: 80px;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .products div div button {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .product--container {
+    align-items: center;
+    width: 90%;
+  }
+  .product--container .form {
+    align-items: center;
+  }
+  .product--container .form form {
+    align-items: center;
+  }
+  .product--container .form input:nth-of-type(2) {
+    margin: 0 0 0 4px;
+  }
+  .products > div {
+    width: 100%;
+    height: 100%;
+  }
+  .products img {
+    height: 100%;
+  }
+}

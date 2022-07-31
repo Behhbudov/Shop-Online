@@ -1,0 +1,106 @@
+.single--product-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f3f9ff;
+  padding: 0.7rem 0 2.5rem 0;
+}
+.single--product-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+.single--product-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.single--product-info > div div {
+  display: flex;
+  align-items: center;
+}
+.single--product-info > div div p:hover {
+  color: #007bff;
+  transition: 0.3s ease;
+}
+.single--product-info > div div span:nth-of-type(1),
+.single--product-info > div div span:nth-of-type(3) {
+  margin: 0 7px;
+}
+.single--product-info > div div span:last-child {
+  color: #00bea4;
+}
+.single--product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.single--product-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.single--product-container img {
+  width: 90%;
+  border-radius: 20px;
+}
+.single--product-container h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.single--product-container .eded {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #00bea4;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+.single--product-container p {
+  color: #838383;
+  margin-bottom: 1rem;
+}
+.single--product-container .price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #00bea4;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+.single--product-container div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single--product-container .button {
+  height: 42px;
+  font-size: 17px;
+  padding: 0 15px;
+  background-color: #00bea4;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .single--product-container {
+    flex-direction: column;
+  }
+  .single--product-container h1 {
+    text-align: center;
+  }
+  .single--product-container p {
+    text-align: center;
+  }
+  .single--product-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

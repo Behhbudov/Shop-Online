@@ -1,0 +1,116 @@
+.cart--info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f3f9ff;
+  padding: 0.7rem 0 2.5rem 0;
+}
+.cart--info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+.cart--info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.cart--info > div div {
+  display: flex;
+  align-items: center;
+}
+.cart--info > div div p:hover {
+  color: #007bff;
+  transition: 0.3s ease;
+}
+.cart--info > div div span:nth-of-type(2) {
+  margin: 0 7px;
+}
+.cart--info > div div span:nth-of-type(4),
+.cart--info > div div span:nth-of-type(1) {
+  margin: 0 0 0 7px;
+}
+.cart--info > div div span:last-child {
+  color: #00bea4;
+}
+.cartt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0 50px 0;
+}
+.cart--container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.cart--container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 25px 0;
+}
+.cart--container .sayi {
+  margin: 0 0 0 70px;
+}
+.cart--container div img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cart--container div .quantity {
+  display: flex;
+  align-items: center;
+}
+.cart--container div .quantity .buttons:nth-child(1) {
+  margin-right: 5px;
+}
+.cart--container div .quantity .buttons:nth-child(2) {
+  margin-left: 5px;
+}
+.cart--container div .buttons {
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cart--container div .button {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .cart--container {
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+  }
+  .cart--container div {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+  }
+  .cart--container div img {
+    width: 50px;
+    height: 50px;
+  }
+  .cart--container .sayi {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .cart--container .desc,
+  .cart--container div:nth-child(1) {
+    font-size: 12px;
+  }
+}
